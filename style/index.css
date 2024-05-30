@@ -1,0 +1,443 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+p{
+  margin:20px 0px 0px 80px;
+  width:250px;
+}
+i{
+  background-color: aliceblue;
+  color:blue;
+  width:30px;
+  height:30px;
+}
+#container{
+  background-color: black;
+  width:100vw;
+  height:100%;
+  color: white;
+  margin:0px 0px 0px 0px;
+  border: 0px 0px 0px 0px;
+
+}
+#user{
+  background-color: azure;
+  width:20px;
+  height:20px;
+  border-radius: 20px;
+  border:2px solid white;
+  box-shadow: 3px 0px 3px rgb(101, 100, 100) ;
+}
+#menu div{
+  cursor: pointer;
+
+}
+#menu{
+  display: flex;
+}
+
+#navigationbar{
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+}
+#picture{
+  width:400px;
+  height:400px;
+  margin:20px 0px 0px 680px;
+  position: absolute;
+  /* background-color: antiquewhite; */
+  display: flex;
+
+}
+/* #picture div{
+  width:5px;
+  height:5px;
+  border-radius: 2.5px;
+  background-color: rgb(103, 48, 232);
+  margin:2px 2px 2px 2px;
+  text-shadow: 10px -20px -30px rgba(89, 152, 223, 0.7);
+
+} */
+#abt{
+  margin:40px 0px 0px 50px;
+}
+#Resumebtn{
+  margin:20px 0px 0px 80px;
+  padding: 7px 7px 7px 7px;
+  background-color: blueviolet;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#list{
+  display: flex;
+  
+}
+#navigationbar div{
+
+  margin: 10px 10px 10px 10px;
+}
+#About{
+  margin:50px 0px 0px 10px;
+  display: flex;
+}
+.name1{
+  /* position: fixed; */
+  margin:-44px 0px 0px 130px;
+}
+.role1{
+  /* position: absolute; */
+  margin: -42px 0px 0px 250px;
+}
+#name,#role{
+  margin:20px 0px 10px 80px;
+  font-size: larger;
+  font-weight: 900;
+}
+#profile{
+  width:250px;
+  height:250px;
+  margin:20px 0px 0px 330px;
+  border:4px solid blueviolet;
+  border-radius: 125px;
+  border-style: dashed;
+  /* box-shadow: 10px 10px 10px rgb(0, 106, 255); */
+  animation:shadow 2s steps(3) infinite;
+
+}
+
+#abtbtn,#prtsbtn,#sklbtn,#edubtn{
+  cursor: pointer;
+}
+#abtbtn:active{
+  color: blue;
+}
+#prtsbtn:active{
+  color: blue;
+}
+#edubtn:active{
+  color: blue;
+}
+#sklbtn:active{
+  color: blue;
+}
+.name1,.role1{
+  font-size: x-large;
+  font-style:normal;
+  font-weight: bold;
+  position: absolute;
+  list-style: none;
+  overflow: hidden;
+  white-space:nowrap;
+  border-right: 2px solid red;
+  animation:typing 6s steps(13) infinite;
+  color:rgb(0, 106, 255);
+  border-style:dotted;
+  
+}
+
+#skillhead{
+  margin: 100px 0px 40px 500px;
+}
+#skilldesc{
+  width:600px;
+  margin:20px 0px 20px 400px;
+  font-style: normal;
+
+}
+#skillslist{
+  margin:30px 0px 10px 100px;
+  /* position: relative; */
+  width:380px;
+  height:300px;
+  border: 2px solid blue;
+}
+#otherskills{
+  margin:30px 0px 10px 100px;
+  /* position: relative; */
+  width:350px;
+  height:300px;
+  border: 2px solid blue;
+}
+#lstone,#lsttwo,#lstthree{
+  display: flex;
+}
+#lstone div{
+  margin:20px 10px 10px 10px;
+  border:1px solid burlywood;
+  padding: 7px 7px 7px 7px;
+}
+#lsttwo div{
+  margin:20px 10px 0px 10px;
+  border:1px solid burlywood;
+  padding: 7px 7px 7px 7px;
+}
+#lstthree div{
+  margin:20px 10px 0px 10px;
+  border:1px solid burlywood;
+  padding: 7px 7px 7px 7px;
+}
+#skillslist img{
+  width:20px;
+  height:20px;
+}
+#skillslist h2{
+  color: rgb(147, 143, 143);
+  margin:10px 0px 10px 50px;
+}
+#otherskills h2{
+  color: rgb(147, 143, 143);
+  margin:10px 0px 10px 90px;
+}
+#skills{
+  display: flex;
+}
+#other,#other1,#other2{
+  display: flex;
+
+}
+#other div{
+  margin:20px 10px 0px 10px;
+  border:1px solid burlywood;
+  padding: 7px 7px 7px 7px;
+}
+#other1 div{
+  margin:20px 0px 0px 10px;
+  border:1px solid burlywood;
+  padding: 7px 7px 7px 7px;
+}
+#other2 div{
+  margin:20px 0px 0px 10px;
+  border:1px solid burlywood;
+  padding: 7px 7px 7px 7px;
+}
+#otherskills img{
+  width:20px ;
+  height:20px;
+}
+h1{
+  margin:50px 0px 40px 500px;
+}
+#projectcontainer p{
+  margin:20px 0px 0px 350px;
+  width:600px;
+}
+td{
+  border: 2px solid rgb(84, 77, 184);
+  padding: 5px 5px 5px 5px;
+  cursor: pointer;
+
+}
+td:active{
+  background-color: blueviolet;
+}
+table{
+  border-collapse: collapse;
+  margin:50px 0px 0px 430px;
+}
+.overflow img{
+  width:200px;
+  height:100px;
+  margin:2px 0px 0px 0px;
+
+}
+.card{
+  background-color: black;
+  color:white;
+  border: 1px solid rgb(69, 69, 69);
+  width:250px;
+  height:250px;
+  cursor: pointer;
+  margin:0px 0px 30px 0px;
+  transition: 0.6s;
+
+}
+.card:hover{
+  margin:-10px 0px 40px 0px; 
+  box-shadow: 10px 0px 10px rgb(87, 87, 87);
+}
+#projectlists{
+  margin:60px 20px 10px 20px;
+}
+#buttons{
+  display: flex;
+  margin:20px 20px 10px 30px;  
+}
+#buttons button{
+  margin:10px 10px 10px 10px;
+  background-color: rgb(76, 74, 76);
+  padding:5px 5px 5px 5px;
+  border-radius: 10px;
+}
+#recoment{
+  color:rgb(75, 76, 76);
+  font-size: 15px;
+}
+#buttons button:active{
+  background-color: blueviolet;
+}
+#education p{
+  margin:20px 0px 0px 300px;
+  width:600px;
+}
+#education h4{
+  font-size: 17px;
+}
+#college,#sscschool,#hrschool{
+  border:1px solid blue;
+  margin:20px 200px 10px 300px;
+  width:500px;
+  border-radius: 10px;
+}
+#hrschool:hover{
+  box-shadow: 10px 0px 10px rgb(70, 70, 204);
+  height:220px;
+}
+#college:hover{
+  box-shadow: 10px 0px 10px rgb(70, 70, 204);
+  height:220px;
+
+}
+#sscschool:hover{
+  box-shadow: 10px 0px 10px rgb(70, 70, 204);
+  height:220px;
+
+}
+.std,.year{
+  color:rgb(104, 103, 103);
+  font-size: 12px;
+}
+.grade{
+  font-size: 13px;
+  font-weight: bolder;
+  color: rgb(121, 120, 120);
+  margin:20px 0px 10px 7px; 
+}
+.grade span{
+  font-size: 11px;
+  font-weight: 400;
+}
+.head{
+  margin:5px 0px 0px 30px;
+}
+.desc{
+  margin:20px 10px 10px 10px;
+  font-size: 12px;
+  color: rgb(198, 196, 196);
+}
+#contact p{
+  width:500px;
+  margin-left:350px;
+}
+#contactcontainer{
+  width:350px;
+  height:500px;
+  background-color: rgb(29, 28, 28);
+  margin:40px 0px 10px 390px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#contactcontainer:hover{
+  box-shadow: 7px -7px 10px rgb(99, 99, 99);
+  width:355px;
+  height:505px;
+  margin:35px 5px 10px 390px;
+
+
+}
+#contactcontainer img{
+   width:20px;
+   height:20px;
+   border-radius: 10px;
+}
+#message{
+  height:100px;
+}
+#cemail,#cname,#csubject{
+  background-color: black;
+  margin:20px 10px 10px 10px;
+  width:300px;
+  height:40px;
+  color:white;
+  border-radius: 10px;
+}
+#ehead{
+  padding:10px 10px 10px 10px;
+}
+#cmessage{
+  background-color: black;
+  margin:20px 10px 10px 10px;
+  width:300px;
+  height:100px;
+  color:white;
+  border-radius: 10px;
+}
+#esend{
+  margin:30px 0px 20px 140px;
+  background-color: blueviolet;
+  padding:7px 7px 7px 7px;
+  border-radius: 10px;
+}
+#socialmedias{
+  display: flex;
+  margin:30px 0px 20px 500px;
+  /* justify-content: center; */
+  background-color:black; 
+}
+
+#socialmedias i{
+  width:25px;
+  height:25px;
+  color:white;
+  margin:5px 10px 5px 5px;
+  background-color:black ;
+  cursor: pointer;
+}
+#socialmedias i:active{
+  color:blue;
+}
+
+@keyframes typing{
+  from{
+    width:0;
+    font-weight: 900;
+    font-style: normal;
+  }
+  50%{
+    color:white;
+    text-shadow: 10px 0px 10px rgba(89, 152, 223, 0.7); 
+  }
+  to{
+    width:170px;
+    text-shadow: 10px 0px 10px rgba(89, 152, 223, 0.7);
+    font-weight: 900;
+  }
+}
+@keyframes shadow{
+  from{
+    /* box-shadow: 10px 10px 10px rgb(0, 106, 255); */
+    transition: 0.2s;
+  }
+  50%{
+    /* box-shadow: -7.5px -7.5px 7.5px rgb(213, 82, 207); */
+    transition: 0.2s;
+    border-style: dotted;
+    border:4px solid brown;
+  }
+  70%{
+    /* box-shadow: 5px 5px 5px rgb(79, 133, 209); */
+    transition: 0.2s;
+    border-style: dashed;
+    border:4px solid pink;
+  }
+  to{
+    /* box-shadow: -7.5px -7.5px 2.5px rgb(154, 78, 194); */
+    transition: 0.2s;
+    border-style: dotted;
+
+  }
+}

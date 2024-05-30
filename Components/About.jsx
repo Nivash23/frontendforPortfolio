@@ -1,5 +1,6 @@
 import React from 'react'
 import '../style/index.css'
+import profile from '../src/assets/images/profilephoto.jpg'
 
 function About() {
   return (
@@ -17,7 +18,7 @@ function About() {
       </div>
         <div>
 
-         <img id="profile" src="../src/assets/images/profilephoto.jpg" alt="" />
+         <img id="profile" src={profile} alt="" />
         </div>
     </div>
   )

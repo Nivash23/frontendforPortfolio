@@ -3,6 +3,7 @@ import rock from "../src/assets/images/projectsimages/rocket.jpeg";
 import '../style/index.css'
 
 function Contact() {
+  const [responsemessge, setResponsemessge] = useState();
   const [contactdetails, setContactdetails] = useState({
     email: "",
     name: "",
@@ -11,6 +12,7 @@ function Contact() {
   })
   const contactHandler = async (e) => {
     e.preventDefault();
+    setResponsemessge("Sending...");
     const contact = {
       email: contactdetails.email,
       name: contactdetails.name,
@@ -28,9 +30,20 @@ function Contact() {
         
       }
     );
-    console.log(response.data);
-    
-
+    const result = await response.json();
+    if (response.status == 200)
+    {
+      setContactdetails({
+        email: "",
+        name: "",
+        subject: "",
+        message: ""
+      });
+      setResponsemessge(result.message)
+      }
+      setTimeout(() => {
+        setResponsemessge('');
+      },4000)
   }
   return (
     <div id="contact">
@@ -62,7 +75,8 @@ function Contact() {
           value={contactdetails.message}
           onChange={(e)=>{setContactdetails({...contactdetails,message:e.target.value})}} ></textarea>
 
-        <button id="esend" type="submit" onClick={contactHandler}>Send</button>
+          <button id="esend" type="submit" onClick={contactHandler}>Send</button>
+          <div id="resmsg">{responsemessge }</div>
         
       </form>
 
@@ -73,7 +87,7 @@ function Contact() {
         <div><i class="fa fa-github" onClick={()=>{window.location.href="https://github.com/Nivash23?tab=repositories"}}></i></div>
         <div><i class="fa fa-linkedin" onClick={()=>{window.location.href="https://www.linkedin.com/in/nivash-r-845a61269/"}}></i></div>
         <div><i class="fa fa-envelope" onClick={()=>{window.location.href="https://mail.google.com/mail/u/0/#inbox"}}></i></div>
-        <div><i class="fa fa-whatsapp" onClick={()=>{window.location.href="https://www.whatsapp.com/"}}></i></div>
+        <div><i class="fa fa-whatsapp" onClick={()=>{window.location.href="https://wa.me/+919360154633"}}></i></div>
       </div>
     </div>
   );

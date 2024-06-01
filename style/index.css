@@ -363,12 +363,9 @@ table{
   transition: 0.5s;
 }
 #contactcontainer:hover{
-  box-shadow: 7px -7px 10px rgb(99, 99, 99);
-  width:355px;
-  height:550px;
-  margin:35px 5px 10px 390px;
-
-
+  box-shadow: 7px -7px 7px rgb(80, 80, 80);
+  margin-top: 35px;
+  margin-right: 5px;
 }
 #contactcontainer img{
    width:20px;
@@ -551,6 +548,7 @@ table{
   cursor: pointer;
   transition: 0.5s;
 }
+
 #contact p{
   width:500px;
   margin-left:570px;

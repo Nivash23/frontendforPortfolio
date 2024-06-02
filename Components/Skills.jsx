@@ -20,7 +20,7 @@ import devtool from '../src/assets/images/skillsimages/devtools.jpeg'
 
 function Skills() {
   return (
-      <div >
+      <div id="skillscontainer">
           <h1 id="skillhead">Skills</h1>
           <p id="skilldesc">Here are some of my skills on which I have learnt.</p>
           <div id="skills">

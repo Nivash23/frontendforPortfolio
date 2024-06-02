@@ -7,7 +7,7 @@ function About() {
     <div id='About'>
       <div id="abt">
 
-        <div id="name" >I am </div>
+        <div id="name" >Hi,I am </div>
         <div class="name1">NIVASH R</div>
         <div id="role">I am a Passionate </div>
         <div class="role1">Web Developer</div>

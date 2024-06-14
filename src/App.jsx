@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../style/index.css'
 import About from '../Components/About'
 import Skills from '../Components/Skills'
@@ -7,6 +7,7 @@ import Education from '../Components/Education'
 import Contact from '../Components/Contact'
 
 function App() {
+  const [liststate, setListstate] = useState('not');
   return (
     <div id='container'>
       <div id='navigationbar'>
@@ -20,6 +21,35 @@ function App() {
           <div id="prtsbtn" onClick={()=>{window.scrollBy(600,1000)}}>Projects</div>
           <div id="edubtn" onClick={() => {window.scrollBy(0,1750)}} >Education</div>
         </div>
+        {/* <div id="sign">Sign in</div> */}
+        <div id="menulist">
+   
+            
+          
+        <button id="sign">Sign in</button>
+          <div id="listofoptions" className={liststate} onClick={() => {
+            if (liststate == "active")
+            {
+              setListstate('not')
+            }
+            else {
+              setListstate('active')
+              }
+              
+          }}  >menu
+            
+
+
+            <ul id="listofmenus">
+              <li>About</li>
+              <li>Skills</li>
+              <li>Projects</li>
+              <li>Education</li>
+          </ul>
+
+          </div>
+        </div>
+        
 
       </div>
         <About />
@@ -28,6 +58,7 @@ function App() {
         <Education />
         <Contact/>
     </div>
+
   )
 }
 

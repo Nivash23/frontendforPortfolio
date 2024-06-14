@@ -37,12 +37,44 @@ i{
 }
 #menu{
   display: flex;
-  /* justify-content: flex-start; */
+  /* justify-content: fldex-start; */
 }
+#menulist
+{
+  display: flex;
+}
+#listofoptions{
+  cursor: pointer;
+}
+.not{
+  color:azure;
+  #listofmenus {
+    display: none;
+  }
+}
+#listofmenus li{
+  list-style: none;
+}
+#listofmenus li:hover{
+  background-color: skyblue;
+}
+#listofmenus{
+  /* margin:50px 500px 0px 400px; */
+  position: absolute;
+  transform: translateX(-50px);
+  margin-top: 10px;
+}
+/* #menulines div{
+  width:20px;
+  height: 5px;
+
+} */
+
+
 
 #navigationbar{
   display: flex;
-  justify-content:flex-start;
+  justify-content:space-between;
   height: 50px;
 }
 
@@ -68,7 +100,7 @@ i{
 }
 
 #list{
-  display: flex;
+  display:none;
   
 }
 #navigationbar div{
@@ -91,6 +123,15 @@ i{
   font-size: larger;
   font-weight: 900;
 }
+#sign{
+  background:linear-gradient(to right,violet,darkviolet);
+  width:50px;
+  height:30px;
+  margin-top:10px;
+  margin-right:-10px;
+  border-radius: 10px;
+}
+
 #profile{
   width:250px;
   height:250px;
@@ -313,6 +354,7 @@ table{
   color:rgb(75, 76, 76);
   font-size: 15px;
 }
+
 #buttons button:active{
   background-color: blueviolet;
 }
@@ -518,6 +560,12 @@ table{
   justify-content:space-around;
   height: 50px;
 }
+#list{
+  display: flex;
+}
+#listofoptions{
+  display: none;
+}
 #About{
   margin:50px 0px 0px 70px;
 }
@@ -593,6 +641,12 @@ table{
   display: flex; 
   /* justify-content: center; */ 
   background-color: black;
+}
+#list{
+  display: flex;
+}
+#listofoptions{
+  display: none;
 }
 
 #user{
@@ -704,6 +758,13 @@ table{
   /* justify-content: center; */ 
   background-color: black;
 }
+#list{
+  display: flex;
+}
+#listofoptions{
+  display: none;
+}
+
 
 #user{
   display: inline;
@@ -812,10 +873,16 @@ table{
 @media(min-width:1400px)
 {
 #About{
-  margin:50px 0px 0px 0px;
+  margin:50px 0px 0px -200px;
   display: flex;
   justify-content: center;
   background-color: black;
+}
+#list{
+  display: flex;
+}
+#listofoptions{
+  display: none;
 }
 
 #user{
@@ -846,7 +913,7 @@ table{
 }
 
 #profile{
-  margin:20px 0px 10px 330px;
+  margin:20px 0px 10px 470px;
   width:300px;
   height:300px;
   border-radius: 150px;
